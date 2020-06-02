@@ -1,0 +1,16 @@
+{
+	"sectionId":null,
+	"sectionName":"Food",
+	"updatedDate":"12-09-2019",
+	"createdDate":"20-08-2019",
+	"publishedDate":"02-09-2019",
+	"updatedBy":"Shuvam",
+	"createdBy":"Shuvam Kumar",
+	"sectionDetails":{
+		"sectionDetId":104,
+		"sectionId":1011,
+		"title":"Chili Chicken",
+		"newsAbstract":"Increases fat, crabs",
+		"url":"Hello"
+	}
+}

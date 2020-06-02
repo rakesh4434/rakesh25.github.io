@@ -1,0 +1,723 @@
+2020-04-21 23:55:06 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - Starting NewsAppliactionApplication on DESKTOP-HEB3C4G with PID 9132 (C:\Users\Mamta\Desktop\softwares\newsAppliaction\target\classes started by Mamta in C:\Users\Mamta\Desktop\softwares\newsAppliaction)
+2020-04-21 23:55:06 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - No active profile set, falling back to default profiles: default
+2020-04-21 23:55:07 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-21 23:55:07 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-21 23:55:12 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-04-21 23:55:12 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 234ms. Found 2 MongoDB repository interfaces.
+2020-04-21 23:55:16 {restartedMain} INFO   o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2020-04-21 23:55:16 {restartedMain} INFO   o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-21 23:55:16 {restartedMain} INFO   o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-21 23:55:16 {restartedMain} INFO   o.a.c.c.C.[.[.[/newsApplication] - Initializing Spring embedded WebApplicationContext
+2020-04-21 23:55:16 {restartedMain} INFO   o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9759 ms
+2020-04-21 23:55:18 {restartedMain} INFO   org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-04-21 23:55:18 {cluster-ClusterId{value='5e9f3a8e0d34966a0d98a225', description='null'}-localhost:27017} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3}] to localhost:27017
+2020-04-21 23:55:18 {cluster-ClusterId{value='5e9f3a8e0d34966a0d98a225', description='null'}-localhost:27017} INFO   org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 3]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=29771562}
+2020-04-21 23:55:19 {restartedMain} WARN   o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2020-04-21 23:55:19 {restartedMain} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:4}] to localhost:27017
+2020-04-21 23:55:20 {restartedMain} INFO   o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-04-21 23:55:22 {restartedMain} INFO   o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-21 23:55:23 {restartedMain} INFO   o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-21 23:55:23 {restartedMain} INFO   o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/newsApplication'
+2020-04-21 23:55:23 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - Started NewsAppliactionApplication in 19.111 seconds (JVM running for 21.649)
+2020-04-21 23:55:59 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - Starting NewsAppliactionApplication on DESKTOP-HEB3C4G with PID 13456 (C:\Users\Mamta\Desktop\softwares\newsAppliaction\target\classes started by Mamta in C:\Users\Mamta\Desktop\softwares\newsAppliaction)
+2020-04-21 23:55:59 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - No active profile set, falling back to default profiles: default
+2020-04-21 23:55:59 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-21 23:55:59 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-21 23:56:03 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-04-21 23:56:04 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 227ms. Found 2 MongoDB repository interfaces.
+2020-04-21 23:56:06 {restartedMain} INFO   o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2020-04-21 23:56:06 {restartedMain} INFO   o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-21 23:56:06 {restartedMain} INFO   o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-21 23:56:07 {restartedMain} INFO   o.a.c.c.C.[.[.[/newsApplication] - Initializing Spring embedded WebApplicationContext
+2020-04-21 23:56:07 {restartedMain} INFO   o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7418 ms
+2020-04-21 23:56:09 {restartedMain} INFO   org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-04-21 23:56:10 {cluster-ClusterId{value='5e9f3ac1f752e145fedc8261', description='null'}-localhost:27017} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:5}] to localhost:27017
+2020-04-21 23:56:10 {cluster-ClusterId{value='5e9f3ac1f752e145fedc8261', description='null'}-localhost:27017} INFO   org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 3]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=55074200}
+2020-04-21 23:56:10 {restartedMain} WARN   o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2020-04-21 23:56:10 {restartedMain} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:6}] to localhost:27017
+2020-04-21 23:56:11 {restartedMain} WARN   o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2020-04-21 23:56:12 {restartedMain} INFO   o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-21 23:56:13 {restartedMain} INFO   o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-21 23:56:13 {restartedMain} INFO   o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-04-21 23:56:13 {restartedMain} WARN   o.a.c.loader.WebappClassLoaderBase - The web application [newsApplication] appears to have started a thread named [cluster-ClusterId{value='5e9f3ac1f752e145fedc8261', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.lang.Thread.run(Unknown Source)
+2020-04-21 23:56:13 {restartedMain} WARN   o.a.c.loader.WebappClassLoaderBase - The web application [newsApplication] appears to have started a thread named [CleanCursors-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-04-21 23:56:13 {restartedMain} INFO   o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-21 23:56:13 {restartedMain} ERROR  o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2020-04-21 23:56:13 {restartedMain} INFO   o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-21 23:56:13 {restartedMain} INFO   org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:6}] to localhost:27017 because the pool has been closed.
+2020-04-21 23:56:57 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - Starting NewsAppliactionApplication on DESKTOP-HEB3C4G with PID 13948 (C:\Users\Mamta\Desktop\softwares\newsAppliaction\target\classes started by Mamta in C:\Users\Mamta\Desktop\softwares\newsAppliaction)
+2020-04-21 23:56:57 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - No active profile set, falling back to default profiles: default
+2020-04-21 23:56:57 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-21 23:56:57 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-21 23:57:02 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-04-21 23:57:02 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 241ms. Found 2 MongoDB repository interfaces.
+2020-04-21 23:57:04 {restartedMain} INFO   o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2020-04-21 23:57:04 {restartedMain} INFO   o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-21 23:57:04 {restartedMain} INFO   o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-21 23:57:05 {restartedMain} INFO   o.a.c.c.C.[.[.[/newsApplication] - Initializing Spring embedded WebApplicationContext
+2020-04-21 23:57:05 {restartedMain} INFO   o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7271 ms
+2020-04-21 23:57:06 {restartedMain} INFO   org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-04-21 23:57:06 {cluster-ClusterId{value='5e9f3afabfafd020064d74be', description='null'}-localhost:27017} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+2020-04-21 23:57:06 {cluster-ClusterId{value='5e9f3afabfafd020064d74be', description='null'}-localhost:27017} INFO   org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 3]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11812296}
+2020-04-21 23:57:07 {restartedMain} WARN   o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2020-04-21 23:57:07 {restartedMain} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2020-04-21 23:57:08 {restartedMain} INFO   o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-04-21 23:57:09 {restartedMain} INFO   o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-21 23:57:10 {restartedMain} INFO   o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-21 23:57:10 {restartedMain} INFO   o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/newsApplication'
+2020-04-21 23:57:10 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - Started NewsAppliactionApplication in 14.772 seconds (JVM running for 17.032)
+2020-04-21 23:58:58 {http-nio-8082-exec-1} INFO   o.a.c.c.C.[.[.[/newsApplication] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-21 23:58:59 {http-nio-8082-exec-1} INFO   o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-21 23:58:59 {http-nio-8082-exec-1} INFO   o.s.web.servlet.DispatcherServlet - Completed initialization in 31 ms
+2020-04-21 23:59:23 {http-nio-8082-exec-1} ERROR  o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/newsApplication] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: E11000 duplicate key error collection: newsApplication.sections index: _id_ dup key: { _id: 1013 }; nested exception is com.mongodb.MongoWriteException: E11000 duplicate key error collection: newsApplication.sections index: _id_ dup key: { _id: 1013 }] with root cause
+com.mongodb.MongoWriteException: E11000 duplicate key error collection: newsApplication.sections index: _id_ dup key: { _id: 1013 }
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:1055)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:498)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:482)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:476)
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$insertDocument$16(MongoTemplate.java:1500)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:585)
+	at org.springframework.data.mongodb.core.MongoTemplate.insertDocument(MongoTemplate.java:1494)
+	at org.springframework.data.mongodb.core.MongoTemplate.doInsert(MongoTemplate.java:1294)
+	at org.springframework.data.mongodb.core.MongoTemplate.insert(MongoTemplate.java:1226)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.insert(SimpleMongoRepository.java:254)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:371)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:204)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:657)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:621)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:605)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy100.insert(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy100.insert(Unknown Source)
+	at com.infor.newsApplication.serviceImpl.SectionServiceImpl.createSections(SectionServiceImpl.java:51)
+	at com.infor.newsApplication.controller.SectionController.createSection(SectionController.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-04-22 00:00:42 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - Starting NewsAppliactionApplication on DESKTOP-HEB3C4G with PID 12200 (C:\Users\Mamta\Desktop\softwares\newsAppliaction\target\classes started by Mamta in C:\Users\Mamta\Desktop\softwares\newsAppliaction)
+2020-04-22 00:00:43 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - No active profile set, falling back to default profiles: default
+2020-04-22 00:00:43 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-22 00:00:43 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-22 00:00:47 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-04-22 00:00:47 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 241ms. Found 2 MongoDB repository interfaces.
+2020-04-22 00:00:49 {restartedMain} INFO   o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2020-04-22 00:00:49 {restartedMain} INFO   o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-22 00:00:49 {restartedMain} INFO   o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-22 00:00:49 {restartedMain} INFO   o.a.c.c.C.[.[.[/newsApplication] - Initializing Spring embedded WebApplicationContext
+2020-04-22 00:00:49 {restartedMain} INFO   o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6682 ms
+2020-04-22 00:00:51 {restartedMain} INFO   org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-04-22 00:00:51 {cluster-ClusterId{value='5e9f3bdb0520014598e9e1de', description='null'}-localhost:27017} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:9}] to localhost:27017
+2020-04-22 00:00:51 {cluster-ClusterId{value='5e9f3bdb0520014598e9e1de', description='null'}-localhost:27017} INFO   org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 3]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10507395}
+2020-04-22 00:00:52 {restartedMain} WARN   o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2020-04-22 00:00:52 {restartedMain} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:10}] to localhost:27017
+2020-04-22 00:00:53 {restartedMain} WARN   o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2020-04-22 00:00:53 {restartedMain} INFO   o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-22 00:00:54 {restartedMain} INFO   o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-22 00:00:54 {restartedMain} INFO   o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-04-22 00:00:54 {restartedMain} WARN   o.a.c.loader.WebappClassLoaderBase - The web application [newsApplication] appears to have started a thread named [cluster-ClusterId{value='5e9f3bdb0520014598e9e1de', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.lang.Thread.run(Unknown Source)
+2020-04-22 00:00:54 {restartedMain} WARN   o.a.c.loader.WebappClassLoaderBase - The web application [newsApplication] appears to have started a thread named [CleanCursors-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-04-22 00:00:54 {restartedMain} INFO   o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-22 00:00:54 {restartedMain} ERROR  o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2020-04-22 00:00:54 {restartedMain} INFO   o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-22 00:00:54 {restartedMain} INFO   org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:10}] to localhost:27017 because the pool has been closed.
+2020-04-22 00:01:09 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - Starting NewsAppliactionApplication on DESKTOP-HEB3C4G with PID 13836 (C:\Users\Mamta\Desktop\softwares\newsAppliaction\target\classes started by Mamta in C:\Users\Mamta\Desktop\softwares\newsAppliaction)
+2020-04-22 00:01:09 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - No active profile set, falling back to default profiles: default
+2020-04-22 00:01:10 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-22 00:01:10 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-22 00:01:13 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-04-22 00:01:13 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 206ms. Found 2 MongoDB repository interfaces.
+2020-04-22 00:01:15 {restartedMain} INFO   o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2020-04-22 00:01:15 {restartedMain} INFO   o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-22 00:01:15 {restartedMain} INFO   o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-22 00:01:16 {restartedMain} INFO   o.a.c.c.C.[.[.[/newsApplication] - Initializing Spring embedded WebApplicationContext
+2020-04-22 00:01:16 {restartedMain} INFO   o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5974 ms
+2020-04-22 00:01:17 {restartedMain} INFO   org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-04-22 00:01:17 {cluster-ClusterId{value='5e9f3bf52e7567510cfe0556', description='null'}-localhost:27017} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:11}] to localhost:27017
+2020-04-22 00:01:17 {cluster-ClusterId{value='5e9f3bf52e7567510cfe0556', description='null'}-localhost:27017} INFO   org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 3]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11259546}
+2020-04-22 00:01:17 {restartedMain} WARN   o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2020-04-22 00:01:18 {restartedMain} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:12}] to localhost:27017
+2020-04-22 00:01:18 {restartedMain} INFO   o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-04-22 00:01:19 {restartedMain} INFO   o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-22 00:01:20 {restartedMain} INFO   o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-22 00:01:20 {restartedMain} INFO   o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/newsApplication'
+2020-04-22 00:01:20 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - Started NewsAppliactionApplication in 12.505 seconds (JVM running for 13.949)
+2020-04-22 00:02:32 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - Starting NewsAppliactionApplication on DESKTOP-HEB3C4G with PID 14304 (C:\Users\Mamta\Desktop\softwares\newsAppliaction\target\classes started by Mamta in C:\Users\Mamta\Desktop\softwares\newsAppliaction)
+2020-04-22 00:02:32 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - No active profile set, falling back to default profiles: default
+2020-04-22 00:02:32 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-22 00:02:32 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-22 00:02:36 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-04-22 00:02:36 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 190ms. Found 2 MongoDB repository interfaces.
+2020-04-22 00:02:38 {restartedMain} INFO   o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2020-04-22 00:02:38 {restartedMain} INFO   o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-22 00:02:38 {restartedMain} INFO   o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-22 00:02:39 {restartedMain} INFO   o.a.c.c.C.[.[.[/newsApplication] - Initializing Spring embedded WebApplicationContext
+2020-04-22 00:02:39 {restartedMain} INFO   o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6226 ms
+2020-04-22 00:02:40 {restartedMain} INFO   org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-04-22 00:02:40 {cluster-ClusterId{value='5e9f3c4801778c611e0e591c', description='null'}-localhost:27017} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:13}] to localhost:27017
+2020-04-22 00:02:40 {cluster-ClusterId{value='5e9f3c4801778c611e0e591c', description='null'}-localhost:27017} INFO   org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 3]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=40884489}
+2020-04-22 00:02:41 {restartedMain} WARN   o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2020-04-22 00:02:41 {restartedMain} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:14}] to localhost:27017
+2020-04-22 00:02:41 {restartedMain} INFO   o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-04-22 00:02:42 {restartedMain} INFO   o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-22 00:02:43 {restartedMain} INFO   o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-22 00:02:43 {restartedMain} INFO   o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/newsApplication'
+2020-04-22 00:02:43 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - Started NewsAppliactionApplication in 12.968 seconds (JVM running for 14.491)
+2020-04-22 00:02:49 {http-nio-8082-exec-1} INFO   o.a.c.c.C.[.[.[/newsApplication] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-22 00:02:49 {http-nio-8082-exec-1} INFO   o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-22 00:02:49 {http-nio-8082-exec-1} INFO   o.s.web.servlet.DispatcherServlet - Completed initialization in 30 ms
+2020-04-22 00:02:50 {http-nio-8082-exec-1} ERROR  o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/newsApplication] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: E11000 duplicate key error collection: newsApplication.sections index: _id_ dup key: { _id: 1014 }; nested exception is com.mongodb.MongoWriteException: E11000 duplicate key error collection: newsApplication.sections index: _id_ dup key: { _id: 1014 }] with root cause
+com.mongodb.MongoWriteException: E11000 duplicate key error collection: newsApplication.sections index: _id_ dup key: { _id: 1014 }
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:1055)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:498)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:482)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:476)
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$insertDocument$16(MongoTemplate.java:1500)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:585)
+	at org.springframework.data.mongodb.core.MongoTemplate.insertDocument(MongoTemplate.java:1494)
+	at org.springframework.data.mongodb.core.MongoTemplate.doInsert(MongoTemplate.java:1294)
+	at org.springframework.data.mongodb.core.MongoTemplate.insert(MongoTemplate.java:1226)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.insert(SimpleMongoRepository.java:254)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:371)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:204)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:657)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:621)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:605)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy100.insert(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy100.insert(Unknown Source)
+	at com.infor.newsApplication.serviceImpl.SectionServiceImpl.createSections(SectionServiceImpl.java:51)
+	at com.infor.newsApplication.controller.SectionController.createSection(SectionController.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-04-22 00:03:52 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - Starting NewsAppliactionApplication on DESKTOP-HEB3C4G with PID 9600 (C:\Users\Mamta\Desktop\softwares\newsAppliaction\target\classes started by Mamta in C:\Users\Mamta\Desktop\softwares\newsAppliaction)
+2020-04-22 00:03:52 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - No active profile set, falling back to default profiles: default
+2020-04-22 00:03:53 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-22 00:03:53 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-22 00:03:57 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-04-22 00:03:57 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 252ms. Found 2 MongoDB repository interfaces.
+2020-04-22 00:04:01 {restartedMain} INFO   o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2020-04-22 00:04:01 {restartedMain} INFO   o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-22 00:04:01 {restartedMain} INFO   o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-22 00:04:01 {restartedMain} INFO   o.a.c.c.C.[.[.[/newsApplication] - Initializing Spring embedded WebApplicationContext
+2020-04-22 00:04:01 {restartedMain} INFO   o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8344 ms
+2020-04-22 00:04:02 {restartedMain} INFO   org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-04-22 00:04:03 {cluster-ClusterId{value='5e9f3c9a11afdb442723e967', description='null'}-localhost:27017} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:15}] to localhost:27017
+2020-04-22 00:04:03 {cluster-ClusterId{value='5e9f3c9a11afdb442723e967', description='null'}-localhost:27017} INFO   org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 3]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20552941}
+2020-04-22 00:04:03 {restartedMain} WARN   o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2020-04-22 00:04:04 {restartedMain} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:16}] to localhost:27017
+2020-04-22 00:04:04 {restartedMain} WARN   o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2020-04-22 00:04:05 {restartedMain} INFO   o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-22 00:04:07 {restartedMain} INFO   o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-22 00:04:07 {restartedMain} INFO   o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-04-22 00:04:07 {restartedMain} WARN   o.a.c.loader.WebappClassLoaderBase - The web application [newsApplication] appears to have started a thread named [cluster-ClusterId{value='5e9f3c9a11afdb442723e967', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.lang.Thread.run(Unknown Source)
+2020-04-22 00:04:07 {restartedMain} WARN   o.a.c.loader.WebappClassLoaderBase - The web application [newsApplication] appears to have started a thread named [CleanCursors-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-04-22 00:04:07 {restartedMain} INFO   o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-22 00:04:07 {restartedMain} ERROR  o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2020-04-22 00:04:07 {restartedMain} INFO   o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-22 00:04:07 {restartedMain} INFO   org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:16}] to localhost:27017 because the pool has been closed.
+2020-04-22 00:04:27 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - Starting NewsAppliactionApplication on DESKTOP-HEB3C4G with PID 12656 (C:\Users\Mamta\Desktop\softwares\newsAppliaction\target\classes started by Mamta in C:\Users\Mamta\Desktop\softwares\newsAppliaction)
+2020-04-22 00:04:27 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - No active profile set, falling back to default profiles: default
+2020-04-22 00:04:27 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-22 00:04:27 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-22 00:04:32 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-04-22 00:04:32 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 214ms. Found 2 MongoDB repository interfaces.
+2020-04-22 00:04:34 {restartedMain} INFO   o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2020-04-22 00:04:34 {restartedMain} INFO   o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-22 00:04:34 {restartedMain} INFO   o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-22 00:04:35 {restartedMain} INFO   o.a.c.c.C.[.[.[/newsApplication] - Initializing Spring embedded WebApplicationContext
+2020-04-22 00:04:35 {restartedMain} INFO   o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7248 ms
+2020-04-22 00:04:36 {restartedMain} INFO   org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-04-22 00:04:37 {cluster-ClusterId{value='5e9f3cbc573a5e70852b8e77', description='null'}-localhost:27017} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:17}] to localhost:27017
+2020-04-22 00:04:37 {cluster-ClusterId{value='5e9f3cbc573a5e70852b8e77', description='null'}-localhost:27017} INFO   org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 3]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16595715}
+2020-04-22 00:04:37 {restartedMain} WARN   o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2020-04-22 00:04:37 {restartedMain} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:18}] to localhost:27017
+2020-04-22 00:04:38 {restartedMain} INFO   o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-04-22 00:04:39 {restartedMain} INFO   o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-22 00:04:40 {restartedMain} INFO   o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-22 00:04:40 {restartedMain} INFO   o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/newsApplication'
+2020-04-22 00:04:40 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - Started NewsAppliactionApplication in 15.058 seconds (JVM running for 16.825)
+2020-04-22 00:04:52 {http-nio-8082-exec-1} INFO   o.a.c.c.C.[.[.[/newsApplication] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-22 00:04:52 {http-nio-8082-exec-1} INFO   o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-22 00:04:52 {http-nio-8082-exec-1} INFO   o.s.web.servlet.DispatcherServlet - Completed initialization in 41 ms
+2020-04-22 00:05:39 {http-nio-8082-exec-3} ERROR  o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/newsApplication] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: E11000 duplicate key error collection: newsApplication.sections index: _id_ dup key: { _id: 2015 }; nested exception is com.mongodb.MongoWriteException: E11000 duplicate key error collection: newsApplication.sections index: _id_ dup key: { _id: 2015 }] with root cause
+com.mongodb.MongoWriteException: E11000 duplicate key error collection: newsApplication.sections index: _id_ dup key: { _id: 2015 }
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:1055)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:498)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:482)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:476)
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$insertDocument$16(MongoTemplate.java:1500)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:585)
+	at org.springframework.data.mongodb.core.MongoTemplate.insertDocument(MongoTemplate.java:1494)
+	at org.springframework.data.mongodb.core.MongoTemplate.doInsert(MongoTemplate.java:1294)
+	at org.springframework.data.mongodb.core.MongoTemplate.insert(MongoTemplate.java:1226)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.insert(SimpleMongoRepository.java:254)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:371)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:204)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:657)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:621)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:605)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy100.insert(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy100.insert(Unknown Source)
+	at com.infor.newsApplication.serviceImpl.SectionServiceImpl.createSections(SectionServiceImpl.java:51)
+	at com.infor.newsApplication.controller.SectionController.createSection(SectionController.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-04-22 00:06:06 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - Starting NewsAppliactionApplication on DESKTOP-HEB3C4G with PID 2668 (C:\Users\Mamta\Desktop\softwares\newsAppliaction\target\classes started by Mamta in C:\Users\Mamta\Desktop\softwares\newsAppliaction)
+2020-04-22 00:06:06 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - No active profile set, falling back to default profiles: default
+2020-04-22 00:06:07 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-22 00:06:07 {restartedMain} INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-22 00:06:11 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-04-22 00:06:11 {restartedMain} INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 235ms. Found 2 MongoDB repository interfaces.
+2020-04-22 00:06:14 {restartedMain} INFO   o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2020-04-22 00:06:14 {restartedMain} INFO   o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-22 00:06:14 {restartedMain} INFO   o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-22 00:06:15 {restartedMain} INFO   o.a.c.c.C.[.[.[/newsApplication] - Initializing Spring embedded WebApplicationContext
+2020-04-22 00:06:15 {restartedMain} INFO   o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7876 ms
+2020-04-22 00:06:16 {restartedMain} INFO   org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-04-22 00:06:16 {cluster-ClusterId{value='5e9f3d206ba9941e65c3cd86', description='null'}-localhost:27017} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:19}] to localhost:27017
+2020-04-22 00:06:16 {cluster-ClusterId{value='5e9f3d206ba9941e65c3cd86', description='null'}-localhost:27017} INFO   org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 3]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20470102}
+2020-04-22 00:06:17 {restartedMain} WARN   o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2020-04-22 00:06:17 {restartedMain} INFO   org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:20}] to localhost:27017
+2020-04-22 00:06:17 {restartedMain} INFO   o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-04-22 00:06:19 {restartedMain} INFO   o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-22 00:06:20 {restartedMain} INFO   o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-22 00:06:20 {restartedMain} INFO   o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/newsApplication'
+2020-04-22 00:06:20 {restartedMain} INFO   c.i.n.NewsAppliactionApplication - Started NewsAppliactionApplication in 15.587 seconds (JVM running for 17.366)
+2020-04-22 00:06:31 {http-nio-8082-exec-2} INFO   o.a.c.c.C.[.[.[/newsApplication] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-22 00:06:31 {http-nio-8082-exec-2} INFO   o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-22 00:06:31 {http-nio-8082-exec-2} INFO   o.s.web.servlet.DispatcherServlet - Completed initialization in 29 ms
